@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    
+    ViewData["Title"] = "Home page";
+ }
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Date is: @DateTime.Now</h1>
+    <p>Price is @Model.Price, price with vat: @Model.PriceWithVat</p>
+     <img src="Images/face.jpg" />
+   <p>Price from ViewData @ViewData["price"]</p>
+    <p>Price from ViewBag @ViewBag.price</p>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

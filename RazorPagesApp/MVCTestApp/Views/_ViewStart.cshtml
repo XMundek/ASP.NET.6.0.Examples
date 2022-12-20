@@ -1,0 +1,7 @@
+﻿@{
+    //Layout = "_Layout";
+    var config = this.Context.RequestServices.GetService<IConfiguration>();
+    //Request.Query["viewName"].ToString()
+    var section = config.GetSection("AppSettings");
+    Layout = section["Layout"];
+}
